@@ -1,0 +1,1 @@
+function z = hw3e(v);% This is the "easy" test problemx=v(1);y=v(2);z=x*x+3*y*y;
