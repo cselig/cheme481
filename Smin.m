@@ -7,9 +7,13 @@ size(f)
     % s = - gradient
     % line search
 
+here's a change
+
 x = 5;
 y = 5;
     
 xrange = [x-1:0.1:x+1];
 yrange = [y-1:0.1:y+1];
 end
+
+
