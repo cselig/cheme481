@@ -3,7 +3,7 @@ function grad = findGradient(fn, x0, N)
 
 % Initialize values. N is dimension of problem space
 f = str2func(fn);
-grad = zeros(N, 1);
+grad = zeros(1, N);
 h = 0.00001;
 
 % Determine gradient using finite forward difference
