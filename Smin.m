@@ -1,4 +1,8 @@
 function [xmin, fmin, iter] = Smin(fn,xstart,errx,errf)
+% Inputs:
+%   fn: function as string
+%   xstart: starting point
+%   errx, errf: Error tolerances of x and function value
 
 % Initialize values. N is dimension of problem space
 N = length(xstart);
