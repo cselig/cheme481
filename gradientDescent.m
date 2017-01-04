@@ -1,8 +1,13 @@
-function [xmin, fmin, iter] = Smin(fn,xstart,errx,errf)
+function [xmin, fmin, iter] = gradientDescent(fn,xstart,errx,errf)
+% Main function
 % Inputs:
 %   fn: function as string
 %   xstart: starting point
 %   errx, errf: Error tolerances of x and function value
+% Outputs: 
+%   xmin: x value of minimum (vector)
+%   fmin: function value of minimum (scalar)
+%   iter: total number of function evaluations
 
 % Initialize values. N is dimension of problem space
 N = length(xstart);
@@ -18,7 +23,7 @@ first = true;
 repeat = true;
 
 % Keep searching in direction determined by gradient until stopping 
-% criteria met. Will always enter loop first time
+% criteria met
 while repeat || first
     first = false;
     fprev = fcurr;
